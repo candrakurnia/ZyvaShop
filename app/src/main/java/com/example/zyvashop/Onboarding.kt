@@ -1,5 +1,6 @@
 package com.example.zyvashop
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
@@ -11,9 +12,11 @@ class Onboarding : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_onboarding)
 
-        val enter: Button = findViewById(R.id.button2)
+        val enter: Button = findViewById(R.id.button)
         enter.setOnClickListener {
-            Toast.makeText(this,"clicked",Toast.LENGTH_SHORT).show()
+            intent = Intent(this,MainActivity::class.java)
+            startActivity(intent)
+            finish()
         }
 
     }
