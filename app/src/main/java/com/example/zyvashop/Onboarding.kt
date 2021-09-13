@@ -10,9 +10,9 @@ class Onboarding : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_onboarding)
 
-        val enter: Button = findViewById(R.id.btn_email)
+        val enter: Button = findViewById(R.id.btn_gmail)
         enter.setOnClickListener {
-            intent = Intent(this,LoginEmail::class.java)
+            intent = Intent(this,MainActivity::class.java)
             startActivity(intent)
             finish()
         }
