@@ -1,0 +1,4 @@
+package ApiInterface
+
+class Api {
+}
